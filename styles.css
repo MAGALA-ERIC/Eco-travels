@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY - Main page styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* HEADER - Top section with logo and navigation */
+header {
+    background-color: #2c5f2d;
+    color: white;
+    padding: 10px 0;
+}
+
+.top img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAVIGATION - Menu links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #90ee90;
+}
+
+/* WELCOME SECTION */
+.welcome {
+    background-color: #2c5f2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c5f2d;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #2c5f2d;
+    margin-top: 20px;
+}
+
+/* FORMS - Input fields and buttons */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button, .btn {
+    background-color: #2c5f2d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+button:hover, .btn:hover {
+    background-color: #1e4620;
+}
+
+/* CARDS - Service boxes */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.card, .cad, .con {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img, .cad img, .con img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* HERO SECTION */
+.Hero {
+    background-color: #e8f5e9;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* VIDEO */
+.video {
+    margin: 20px 0;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* LISTS */
+ul {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+/* MAP SECTION */
+.Map img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2c5f2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* MOBILE FRIENDLY - Makes site look good on phones */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
